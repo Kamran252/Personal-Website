@@ -1,0 +1,281 @@
+* {
+  margin: 15;
+  padding: 10;
+}
+
+header {
+  width: 1033pt;
+  display: flex;
+  justify-content: space-between;
+  height: 92pt;
+  padding: 20px 50px;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  background-color: #E3FDFD;
+  text-align: center;
+  background-image: right 300px;
+  border-radius: 10px;
+}
+
+section {
+  position: relative;
+}
+
+#navigation section {
+  height: 50pt;
+  width: 80%;
+}
+
+#navigation li, header {
+  margin: 10px;
+  list-style: none;
+  display: inline-block;
+}
+
+#navigation li a {
+  text-decoration: none;
+  color: red;
+  height: 92pt;
+  margin: 0;
+}
+
+#navigation ul {
+  height: 30pt;
+}
+
+#Home {
+  width: 100%;
+  height: 180vh;
+}
+
+#About_me {
+  width: 100%;
+  height: 50vh;
+}
+
+#Education {
+  width: 100%;
+  height: 50vh;
+}
+
+#Resume {
+  width: 100%;
+  height: 160vh;
+}
+
+#Hobbies {
+  width: 100%;
+  height: 70vh;
+}
+
+#contact_me {
+  width: 100%;
+  height: 120vh;
+}
+
+#navigations {
+  border: solid;
+  background-color: #FFF8E5;
+
+  z-index: 999;
+  position: fixed;
+  margin-top: 50pt;
+
+}
+
+#Home {
+  background-color: #C1FFD7;
+}
+
+#About_me {
+  background-color: #FE8F8F;
+}
+
+#Education {
+  background-color: #28FFBF;
+}
+
+#Resume {
+  background-color: #FCD2D1;
+}
+
+#Hobbies {
+  background-color: #3DB2FF;
+}
+
+#contact_me {
+  background-color: #FFE194;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  width: 300px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: rgb(184, 15, 15);
+  top: 0;
+  bottom: 0;
+  left: 150px;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  position: relative;
+  background-color: inherit;
+  width: 150px;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(8, 7, 7);
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 100px;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 150px;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(145, 16, 16);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(184, 60, 60);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(190, 48, 48);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(179, 51, 51) transparent transparent;
+}
+
+.right::after {
+  left: -16%;
+}
+
+.content {
+  padding: 20% 30%;
+  background-color: rgb(211, 208, 208);
+  position: left;
+  border-radius: 6px;
+}
+
+.table_l td {
+  width: 15px;
+}
+
+.table_l {
+  width: 15%;
+}
+
+.table_r {
+  text-align: start;
+  margin-left: 200px;
+}
+
+.table_r td {
+  width: 70%;
+  width: 60%;
+  margin-left: 800px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type="submit"i] {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 200% text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 1px #000000;
+  border-radius: 10px;
+  background-color: #4A78F6;
+  background-image: linear-gradient;
+  box-shadow: inset 2px 2px 3px rgba(37, 237, 248, 1),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+input[type="submit"i]:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6);
+}
+
+textarea {
+  width: 55%;
+  height: 10%;
+  border: solid 1px;
+  padding: 1%;
+  border-radius: 15px;
+}
+
+.email {
+  background-color: #CDF0EA;
+  width: 55%;
+  height: 70%;
+  border: solid 1px;
+  padding: 1%;
+  border-radius: 15px;
+  font-size: 150%
+}
+
+.name {
+  background-color: #CDF0EA;
+  width: 55%;
+  height: 70%;
+  border: solid 1px;
+  padding: 1%;
+  border-radius: 15px;
+  font-size: 150%
+}
+
+strong {
+  font-size: 20pt;
+  color: #2A0944;
+}
+
+.alpha {
+  text-align: center;
+}
